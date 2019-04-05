@@ -1,0 +1,401 @@
+/*【CSS Reset】*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*=============【CSS Reset】結束==============*/
+/*【通用設定】*/
+/*使padding與border不會增加總寬度*/
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*使img圖片都自適應大小*/
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+/*=============【通用設定】結束==============*/
+
+/*【網頁容器設定】*/
+.wrap{
+	max-width: 1001px;
+	margin: 0 auto;
+	font-family: Microsoft JhengHei;
+}
+
+.clearfix{
+	clear: both;
+}
+
+/***********************************/
+/************【表頭區塊】*************/
+/*********************************/
+
+/*【社交網站連結】*/
+
+.socialLink{
+	background: #f6f6f6;
+
+}
+
+.linkBox{
+	float: right;
+}
+
+.linkBox li{
+	float: left;
+	margin: 6px 8px 6px 0;
+}
+
+.linkBox img{
+	float: left;	
+}
+
+.facebookBox p{
+	float: left;
+	font-size: 0.9375em;
+	color: #4460a0;
+  	font-weight: bold;
+	padding-right: 8px;
+	padding-left: 4px;
+	border-right: 2px solid #cccccc;
+}
+
+.twitterBox p{
+	float: left;
+	font-size: 0.9375em;
+	color: #00aaec;
+  	font-weight: bold;
+  	padding-right: 12px;
+	padding-left: 2px;
+}
+
+/**********************************/
+/*【主Logo、主選單】*/
+
+.mainLogo{
+	display: block;
+	float: left;
+	background-image: url(../img/mainLogo.png);
+	width: 170px;
+	height: 36px;
+	margin-top: 8px;
+  	margin-left: 20px;
+	text-indent: 101%;
+  	white-space: nowrap;
+  	overflow: hidden;
+}
+
+.mainMenu{
+	float: right;
+}
+
+.mainMenu li{
+	float: left;
+}
+
+.mainMenu li a{
+	display: block;
+	font-size: 0.9375em;
+	color: #00cc99;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 17px;
+  	padding-bottom: 17px;
+  	padding-left: 11px;
+  	padding-right: 11px;
+  	margin-left: 11px;
+  	margin-right: 11px;
+  	border-bottom: 3px solid #fff;
+}
+
+.mainMenu li a:hover{
+	border-bottom: 3px solid #00cc99;
+}
+
+/***********************************/
+/************【內容區塊】*************/
+/*********************************/
+
+/*【Banner圖】*/
+
+.banner{
+	position: relative;
+}
+
+.banner_rect{
+	position: absolute;
+	background-image: url(../img/banner_rect.png);
+	width: 100%;
+	left: 0;
+	top: 26%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 22px;
+}
+
+.banner_rect h2{
+	color: #fff;
+  	font-size: 2.25em;
+  	line-height: 1.5em;
+}
+
+/*【課程介紹】*/
+
+.product li{
+	float: left;
+	width: 31.33%;
+	margin-top: 65px;
+	margin-left: 1%;
+	margin-right: 1%;
+	background: #fff;
+  	border-radius: 5px;
+  	box-shadow: 0px 3px 5px #d6d6d6;
+  	padding-bottom: 24px;
+  	
+}
+
+.product .logoBox{
+	width: 100%;
+	height: 164px;
+	text-align: center;
+}
+
+.htmlLogo{
+	margin-top: 23px;
+}
+
+.rwdLogo{
+	margin-top: 42px;
+}
+
+.jqueryLogo{
+	margin-top: 32px;
+}
+
+.product li h2{
+	text-align: center;
+	font-size: 1.125em;	
+	font-weight: bold;
+	line-height: 1.625;
+}
+
+.product li p{
+	text-align: justify;
+	font-size: 0.9375em;	
+	line-height: 1.5;
+	margin-left: 6.5%;
+  	margin-right: 6.5%;
+}
+
+/*【課程比較表格】*/
+
+.strengthsThemes{
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.strengthsThemes h2{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 64px;
+	margin-bottom: 30px;
+}
+
+.strengthsThemes table{
+	margin: 0 auto;
+}
+
+.strengthsThemes table th{
+	text-align: left;
+	font-weight: bold;
+	background: #f7f7f7;
+	width: 21%;
+	padding-top: 9px;
+  	padding-bottom: 13px;
+  	padding-left: 24px;
+  	font-size: 0.9375em;
+  	border-top: 1px solid #dddddd;
+  	border-bottom: 1px solid #dddddd;
+}
+
+.strengthsThemes table td{
+	width: 21%;
+	padding-top: 9px;
+  	padding-bottom: 13px;
+  	padding-left: 24px;
+  	font-size: 0.9375em;
+  	border-top: 1px solid #dddddd;
+  	border-bottom: 1px solid #dddddd;
+} 
+
+.strengthsThemes .highlighting{
+	color: #00a67d;
+}
+
+/*【用戶留言資料】*/
+.userMessage{
+	margin-top: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+    background: -webkit-linear-gradient(#00644b, #009872);
+    background: -o-linear-gradient(#00644b, #009872);
+    background: linear-gradient(#00644b, #009872);
+}
+
+.userMessage h2{
+	font-size: 1.5em;
+  	color: #fff;  
+  	text-align: center;
+  	font-weight: bold;
+  	line-height: 1.5;  	
+}
+
+.userMessage form textarea{
+  margin-top: 30px;
+  float: left;
+  width: 46%;
+  height: 245px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 5px;
+  resize: none;
+  border: none;
+  padding: 8px;
+  font-size: 0.9375em;
+  font-family: Microsoft JhengHei;
+}
+
+.userMessage form textarea:hover{
+	padding: 5px;
+	border: 3px solid #18e1af;
+	box-shadow: 0.5px 1px 2px #d6d6d6;
+}
+
+.userMessage .form-content{
+	float: left;
+	width: 46%;
+	margin-top: 30px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.userMessage .form-content label{
+	display: block;
+	color: #fff;
+	font-size: 0.9375em;
+  	font-weight: bold;
+}
+
+.userMessage .form-content .texts{
+	width: 100%;
+  	margin-top: 6px;
+  	margin-bottom: 16px;
+  	padding: 8px;  
+  	border-radius: 5px;
+	border: none;
+  	font-size: 0.9375em;
+  	font-family: Microsoft JhengHei;
+}
+
+.userMessage .form-content .texts:hover{
+	padding: 5px;
+	border: 3px solid #18e1af;
+	box-shadow: 0.5px 1px 2px #d6d6d6;
+}
+
+.userMessage .form-content .submit{
+  	float: right; 	
+  	width: 70px;
+  	height: 32px;
+  	border-radius: 5px;
+  	background: #00cc99;
+  	color: #fff;
+  	font-size: 0.9375em;
+  	text-align: center;
+  	border: none;
+  	font-family: Microsoft JhengHei;
+}
+
+.userMessage .form-content .submit:hover{
+  background: #18e1af;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 1px #d6d6d6;
+}
+
+/***********************************/
+/************【表尾區塊】*************/
+/*********************************/
+
+/*【聯絡資訊】*/
+
+.footerLogo{
+	float: left;
+	margin-top: 26px;
+  	margin-left: 20px;
+}
+
+.contactInfo{
+	float: right;
+	margin-top: 21px;
+	margin-right: 16px;
+}
+
+.contactInfo li{
+	font-size: 0.9375em;
+	line-height: 1.5em;
+}
+
+.contactInfo li .infoColor{
+	color: #e55995;
+}

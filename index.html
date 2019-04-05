@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!---------------------------->
+	<!--※※【網頁顯示資訊設定】※※-->	
+	<!---------------------------->
+	
+	<!--頁籤設定-->
+	<title>六角學院HTML、CSS作業</title>	
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!--使用編碼-->
+	<meta charset="UTF-8">
+
+	<!--把螢幕解析度的寬度變成載具的寬度(RWD用)-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--網站描述與關鍵字設定-->
+	<meta name="description" content="這個網站是書豪寫的六角學院HTML、CSS課程的練習作業">
+	<meta name="keywords" content="六角學院, HTML, CSS">
+	
+	<!--網站貼在Facebook上時顯示的資訊-->
+	<meta property="og:title" content="六角學院HTML、CSS作業">
+	<meta property="og:description" content="這個網站是書豪寫的六角學院HTML、CSS課程的練習作業">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="FB上的網址">
+	<meta property="og:image" content="img/html_new.png">
+
+	<!--IE相容性設定-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	
+	<!--載入CSS與javascript-->
+	<link rel="stylesheet" href="css/all.css">
+	<script src="script/code.js"></script>
+</head>
+
+<body>
+	<!--網頁內容的容器-->
+	<div class="wrap">		
+		<!--------------------------------------->
+		<!--網頁表頭區塊-->
+		<div class="header">
+			<!--社交網站連結區塊-->
+			<div class="socialLink">
+				<div class="linkBox">
+					<ul>
+						<li class="facebookBox">
+							<a href="https://zh-tw.facebook.com/" target="_blank" title="在新分頁開啟facebook粉絲專頁">
+								<img src="img/facebookLogo.jpg">
+								<p>粉絲團</p>
+							</a>
+						</li>
+						<li class="twitterBox">
+							<a href="https://twitter.com/?lang=zh-tw" target="_blank" title="在新分頁開啟twitter頁面">
+								<img src="img/twitterLogo.png">
+								<p>追隨我們</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!--主Logo、主選單區塊-->
+			<h1><a href="index.html" class="mainLogo" title="返回首頁">六角學院</a></h1>
+			<ul class="mainMenu">
+				<li><a href="index.html"><h2>首頁</h2></a></li>
+				<li><a href="產品介紹"><h2>產品介紹</h2></a></li>
+				<li><a href="聯絡我們"><h2>聯絡我們</h2></a></li>
+			</ul>		
+			<div class="clearfix"></div>
+		</div>
+		
+		<!--------------------------------------->
+		<!--網頁內容區塊-->
+		<div class="content">
+			<!--Banner圖區塊-->
+			<div class="banner">
+				<img src="img/banner.jpg">
+				<div class="banner_rect">
+					<h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+				</div>
+			</div>
+
+			<!--課程介紹區塊-->
+			<div class="product">
+				<ul>
+					<li>
+						<div class="logoBox">
+							<img src="img/html5Logo.png" class="htmlLogo">
+						</div>
+						<h2>Html 5 基礎教學</h2>
+						<p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+					</li>
+					<li>
+						<div class="logoBox">
+							<img src="img/rwdLogo.png" class="rwdLogo">
+						</div>
+						<h2>響應式網站設計</h2>
+						<p>響應式網站設計(Responsive Web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+					</li>
+					<li>
+						<div class="logoBox">
+							<img src="img/jqueryLogo.png" class="jqueryLogo">
+						</div>
+						<div class="jqueryText">
+							<h2>jQuery 實戰教學</h2>
+							<p>本課程有以下特色<br>．瞭解變數的使用方法<br>．學習並操作DOM<br>．學習基本數學運算方法<br>．套件的操作及運用</p>
+						</div>
+					</li>
+				</ul>				
+			</div>
+			<div class="clearfix"> </div>
+
+			<!--課程比較表格區塊-->
+			<div class="strengthsThemes">
+				<h2>線上及實體課程的差異</h2>
+				<table>
+					<tr>
+						<th>項目</th>
+						<th>Hex School 線上課程</th>
+						<th>一般線上課程</th>
+						<th>實體課程</th>
+					</tr>
+					<tr>
+						<td>費用</td>
+						<td class="highlighting">較低</td>
+						<td class="highlighting">較低</td>
+						<td>較高</td>						
+					</tr>
+					<tr>
+						<td>學習效果</td>
+						<td>一般</td>
+						<td>較低</td>
+						<td class="highlighting">很好</td>
+					</tr>
+					<tr>
+						<td>Code review</td>
+						<td class="highlighting">有</td>
+						<td>無</td>
+						<td>不一定</td>
+					</tr>
+					<tr>
+						<td>課程更新速度</td>
+						<td class="highlighting">普通</td>
+						<td class="highlighting">普通</td>
+						<td>較慢</td>
+					</tr>
+					<tr>
+						<td>多次複習</td>
+						<td class="highlighting">可</td>
+						<td class="highlighting">可</td>
+						<td>不可</td>
+					</tr>
+					<tr>
+						<td>字幕</td>
+						<td class="highlighting">有</td>
+						<td>不一定</td>
+						<td>板書</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--用戶留言訊息區塊-->
+			<div class="userMessage">
+				<h2>對我們課程有興趣嗎？<br>歡迎留下您的資料</h2>
+				<form action="index.html">
+					<textarea name="opinion" id="opinion" placeholder="請輸入您的留言（範例：關於課程的問題、或其他想說的話）"></textarea>
+					
+					<div class="form-content">
+						<label for="personName">姓名</label>	
+						<input id="personName" type="text" name="personName" placeholder="請輸入姓名 (範例：王小明)" class="texts">
+					
+						<label for="TEL">電話</label>
+						<input id="TEL" type="text" name="TEL" placeholder="請輸入電話 (範例：0912345678)" class="texts">
+					
+						<label for="Email">信箱</label>
+						<input id="Email" type="text" name="Email" placeholder="請輸入電子郵件 (範例：hexschool@gmail.com)" class="texts">
+					
+						<input type="submit" value="送出" class="submit">
+					</div>
+				</form>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+
+		<!--------------------------------------->
+		<!--網頁表尾區塊-->
+		<div class="footer">
+			<!--聯絡資訊區塊-->
+			<div class="footerLogo"><img src="img/graylogo.png"></div>
+			<div class="contactInfo">
+				<ul>
+					<li>聯絡我們：<span class="infoColor">hexschool@gmail.com</span></li>
+					<li>電話：<span class="infoColor">0999123456</span></li>
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!--------------------------------------->
+	</div>
+	
+
+</body>
+
+</html>
+
+
+
+
+
